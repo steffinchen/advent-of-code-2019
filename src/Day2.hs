@@ -46,7 +46,7 @@ updateInput noun verb input = do
 
 a :: Int
 a = do
-    (stepThroughProgram 0 input)!!0
+    head (stepThroughProgram 0 input)
 
 b :: [Int]
 b = do
