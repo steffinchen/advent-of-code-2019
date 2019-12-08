@@ -15,7 +15,7 @@ intoMap allOrbits line = do
     Map.insert (head xs) x allOrbits
 
 countStepsToCenter :: Map.Map String String -> String -> (String, Int)
-countStepsToCenter directOrbits planet = (planet, (countP directOrbits planet))
+countStepsToCenter directOrbits planet = (planet, countP directOrbits planet)
 
 countP :: Map.Map String String -> String -> Int
 countP directOrbits "COM" = 0
